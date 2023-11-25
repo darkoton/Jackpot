@@ -1,0 +1,44 @@
+.bang{
+    &__bg{
+        z-index: -1;
+
+        &::before{
+            content:"";
+            background: #220360;
+            filter: blur(15px);
+            opacity: 0.8;
+            z-index: 1;
+            position: absolute;
+            top: -50px;
+            left: -50%;
+            width: 200%;
+            height: 100px;
+        }
+        &::after{
+            content:"";
+            background: #220360;
+            filter: blur(15px);
+            opacity: 0.8;
+            z-index: 1;
+            position: absolute;
+            bottom: -50px;
+            left: -50%;
+            width: 200%;
+            height: 100px;
+        }
+    }
+    &__text{
+        color: #CDC6FF;
+        &:before{
+            content:"";
+            display: block;
+            width: 5px;
+            height:calc(100% + 20px);
+            background: linear-gradient(180deg, #DB205B 0%, rgba(112, 0, 211, 0.55) 100%);
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+    }
+}

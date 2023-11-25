@@ -49,12 +49,18 @@
     }
   }
 
-  @media (max-width: 430px){
+  @media (max-width: 600px){
     &__item{
       &-img{
         transform: none;
       }
+      &-line{
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, #DB205B 0%, rgba(112, 0, 211, 0.55) 100%);
+      }
     }
+
   }
 
 }
