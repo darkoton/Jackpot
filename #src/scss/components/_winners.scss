@@ -1,0 +1,60 @@
+.winners{
+  &__title{
+    font-family: $fontChakra;
+    
+  }
+  &__left{
+    &:before{
+      content: url("../img/winners/salut.png");
+      position: absolute;
+      right: -60px;
+      top: -40px;
+      z-index: -1;
+    }
+  }
+  &__item{
+    border-radius: 16px;
+    border: 1.5px solid #7C72C5;
+    background: #220970;
+
+    &-img{
+      width: 100%;
+      height: 100%;
+      max-width: 122px;
+      max-height: 146px;
+      transform: translateY(20px);
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &-line{
+      width: 3px;
+      background: linear-gradient(180deg, #DB205B 0%, rgba(112, 0, 211, 0.55) 100%);
+    }
+    &-currency{
+      color: #CDC6FF;
+    }
+  }
+
+  @media (max-width: 945px){
+    &__body{
+      flex-direction: column;
+      align-items: center;
+    }
+    &__title{
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 430px){
+    &__item{
+      &-img{
+        transform: none;
+      }
+    }
+  }
+
+}

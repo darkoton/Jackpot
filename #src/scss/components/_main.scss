@@ -1,8 +1,10 @@
 .main{
   &__bg{
     z-index: -1;
-    min-height: calc(100vh + 115px);
-    top: -115px
+    min-height: calc(100% + 115px);
+    top: -115px;
+    object-fit: cover;
+    width: 100%;
   }
 
   &__title{
@@ -144,5 +146,4 @@
       }
     }
   }
-
 }

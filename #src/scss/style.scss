@@ -62,10 +62,14 @@ body {
     padding: 0 10px;
   }
 }
-
+.red{
+  color: #EB4834;
+}
 //< " ФАЙЛЫ СТИЛЕЙ ХЕАДЕР/ФУТЕР/ПОПАПЫ И Т.Д. " >=============================================================================================================>//
 @import "./components/_header";
 @import "./components/_main";
+@import "./components/_winners";
+@import "./components/_how-works";
 
 @import "./components/_footer";
 @import "./components/_popup";
