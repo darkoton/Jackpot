@@ -68,12 +68,17 @@ body {
 .chakra{
    font-family: $fontChakra;
 }
+.color-purple{
+   color: #CDC6FF
+}
 //< " ФАЙЛЫ СТИЛЕЙ ХЕАДЕР/ФУТЕР/ПОПАПЫ И Т.Д. " >=============================================================================================================>//
 @import "./components/_header";
 @import "./components/_main";
 @import "./components/_winners";
 @import "./components/_how-works";
 @import "./components/_bang";
+@import "./components/_rules";
+@import "./components/_jackpot";
 
 @import "./components/_footer";
 @import "./components/_popup";

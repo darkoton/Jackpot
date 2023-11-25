@@ -5,8 +5,7 @@
         &::before{
             content:"";
             background: #220360;
-            filter: blur(15px);
-            opacity: 0.8;
+            filter: blur(20px);
             z-index: 1;
             position: absolute;
             top: -50px;
@@ -17,8 +16,7 @@
         &::after{
             content:"";
             background: #220360;
-            filter: blur(15px);
-            opacity: 0.8;
+            filter: blur(20px);
             z-index: 1;
             position: absolute;
             bottom: -50px;

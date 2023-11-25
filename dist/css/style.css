@@ -567,6 +567,10 @@ body._lock-scroll {
   font-family: "Chakra Petch", sans-serif;
 }
 
+.color-purple {
+  color: #CDC6FF;
+}
+
 .header__logo {
   letter-spacing: -0.16px;
 }
@@ -1060,9 +1064,8 @@ body._lock-scroll {
 .bang__bg::before {
   content: "";
   background: #220360;
-  -webkit-filter: blur(15px);
-          filter: blur(15px);
-  opacity: 0.8;
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
   z-index: 1;
   position: absolute;
   top: -50px;
@@ -1074,9 +1077,8 @@ body._lock-scroll {
 .bang__bg::after {
   content: "";
   background: #220360;
-  -webkit-filter: blur(15px);
-          filter: blur(15px);
-  opacity: 0.8;
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
   z-index: 1;
   position: absolute;
   bottom: -50px;
@@ -1101,6 +1103,91 @@ body._lock-scroll {
   left: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.rules__card {
+  border: 1.3px solid #2F1781;
+  background: #3D1A8C;
+  -webkit-box-shadow: 0px 4px 104px 0px rgba(0, 0, 0, 0.25) inset;
+          box-shadow: 0px 4px 104px 0px rgba(0, 0, 0, 0.25) inset;
+  max-width: 552px;
+}
+
+.rules__card-img {
+  z-index: 1;
+}
+
+.rules__card-img img {
+  max-height: 230px;
+}
+
+.rules__card-img::before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: block;
+  z-index: -1;
+}
+
+.rules__card-img.rules__card-img-1::before {
+  content: "";
+  height: 255.605px;
+  width: 174.74px;
+  background-color: rgba(55, 84, 185, 0.8);
+  -webkit-filter: blur(60px);
+          filter: blur(60px);
+}
+
+.rules__card-img.rules__card-img-2::before {
+  content: "";
+  height: 281.655px;
+  width: 174.74px;
+  border-radius: 281.655px;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-filter: blur(60px);
+          filter: blur(60px);
+}
+
+.jackpot__body {
+  z-index: 1;
+}
+
+.jackpot__body::before {
+  content: url("../img/jackpot/bg.png");
+  position: absolute;
+  left: -15%;
+  top: -40%;
+  z-index: -1;
+}
+
+.jackpot__left {
+  max-width: 470px;
+}
+
+.jackpot__right {
+  max-width: 507px;
+}
+
+.jackpot__list li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #CDC6FF;
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+@media (max-width: 1076px) {
+  .jackpot__left {
+    max-width: 650px;
+  }
 }
 
 .popup-wrapper__item {
