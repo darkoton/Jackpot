@@ -34,7 +34,7 @@
       opacity: 0.03;
       position: absolute;
       bottom: 0;
-      line-height: 85px;
+      @include adaptiv-line-height(100, 85);
     }
   }
   &__text{

@@ -164,4 +164,31 @@
       }
     }
   }
+  &__select{
+    svg{
+      transition: all 0.4s ease 0s;
+    }
+    svg.active{
+      transform: rotate(180deg);
+    }
+  }
+  &__select-list{
+    background: #561D93;
+    transition: all 0.3s ease 0s;
+    max-height: 0%;
+    &.active{
+      max-height: 210px;
+      // padding: 8px 16px;
+    }
+
+    li{
+      @media (any-hover:hover){
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        &:hover{
+          background: #6C00D2;
+        }
+      }
+    }
+  }
 }
