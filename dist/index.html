@@ -96,28 +96,30 @@
       <img src="./img/main/bg.png" alt="Alt Text!" class="main__bg absolute left-0 w-full h-full object-cover" />
 
       <div class='main__body flex flex-col items-center justify-between pb-16'>
-        <h1 class="main__title text-center text-5xl sm:text-6xl text-bold capitalize text-transparent mb-9">
+        <h1
+          class="main__title text-center text-5xl sm:text-6xl text-bold capitalize text-transparent mb-9 wow fadeInLeft"
+          data-wow-duration="1.5s">
           Live Jackpot</h1>
         <h2 class="main__winnings text-5xl sm:text-6xl font-bold capitalize mb-5 relative">$ 4 5, 0 0 0</h2>
 
         <span class="main__contract text-center text-xl	font-medium capitalize mb-8 sm:mb-16">Contract |
           0xeba5ef26c655E25fcbA6778b1D7</span>
 
-
         <div class="main__main flex w-full justify-between flex-col lg:flex-row items-center gap-y-7 sm:gap-y-16">
-          <div class="main__left flex flex-col items-center lg:items-stretch">
+          <div class="main__left flex flex-col items-center lg:items-stretch max-[1024px]:w-3/4">
             <h2 class="main__subtitle text-4xl sm:text-6xl capitalize	font-bold mb-6 sm:mb-10	">Earn Big Today!</h2>
+            <audio src="./video/dmc.mp3" class="hidden" data-timer-audio></audio>
 
             <div class="main__timer mb-11">
               <div class="main__timer-top flex-col-reverse sm:flex-row flex items-center mb-3.5 gap-y-4">
                 <div class="main__timer-left flex items-center gap-x-4">
                   <div class="main__timer-minutes flex flex-col">
-                    <div class="main__time text-3xl sm:text-4xl	px-7 py-3">09</div>
+                    <div class="main__time text-3xl sm:text-4xl	px-7 py-3" data-timer-minutes="10">10</div>
 
                   </div>
                   <span class="dots text-3xl sm:text-4xl">:</span>
                   <div class="main__timer-seconds flex flex-col items-center">
-                    <div class="main__time text-3xl sm:text-4xl	px-7 py-3">48</div>
+                    <div class="main__time text-3xl sm:text-4xl	px-7 py-3 timer-seconds" data-timer-seconds="0">00</div>
 
                   </div>
                 </div>
@@ -131,13 +133,17 @@
               </div>
             </div>
 
-            <div class="main__progress">
-              <div class="main__progress-top">
+            <div class="main__progress w-full">
+              <div class="main__progress-top flex w-full justify-between">
                 <h4 class="main__progress-title text-lg font-medium capitalize mb-5">Big Bang Loading</h4>
-                <div class="main__progress-value">57.9%</div>
+                <div class="main__progress-value" data-timer-precent-value>0%</div>
               </div>
 
-              <div class="main__progress-bar"></div>
+              <div class="main__progress-bar w-full mb-16">
+                <div class="main__progress-bar-value" data-timer-precent>
+                  <div class="main__progress-bar-bg"></div>
+                </div>
+              </div>
 
               <button class="main__progress-button _button flex items-center gap-x-4 px-7">
                 BUY NOW
@@ -598,7 +604,9 @@
 	</div>
 </div> -->
   </div>
+  <script src="js/wow.min.js"></script>
   <script src="js/script.js"></script>
+
 </body>
 
 </html>

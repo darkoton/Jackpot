@@ -807,6 +807,7 @@ body._lock-scroll {
 .main__time {
   font-family: "Chakra Petch", sans-serif;
   border-radius: 8px;
+  width: 88px;
   color: #fff;
   position: relative;
   background: transparent;
@@ -848,8 +849,30 @@ body._lock-scroll {
   opacity: 0;
 }
 
-.main__progress__title {
+.main__progress-title {
   letter-spacing: -0.09px;
+}
+
+.main__progress-bar {
+  height: 24px;
+  background-color: rgba(255, 250, 248, 0.5);
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.main__progress-bar-value {
+  width: 0%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, color-stop(-0.03%, #EF5329), color-stop(99.98%, #CF0279));
+  background: linear-gradient(90deg, #EF5329 -0.03%, #CF0279 99.98%);
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.main__progress-bar-bg {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/main/progress.png");
 }
 
 .main__right {
