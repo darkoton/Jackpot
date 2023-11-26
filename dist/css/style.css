@@ -336,6 +336,7 @@ body.ie ._ibg img {
   position: relative;
   font-weight: bold;
   text-transform: capitalize;
+  z-index: 1;
   border-radius: 30px;
   font-family: "Chakra Petch", sans-serif;
   color: #fff;
@@ -1188,6 +1189,68 @@ body._lock-scroll {
   .jackpot__left {
     max-width: 650px;
   }
+}
+
+.subscribe {
+  margin-bottom: -100px;
+}
+
+.subscribe__left {
+  max-width: 365px;
+}
+
+.subscribe__main {
+  z-index: 1;
+  border-radius: 30px;
+  max-width: 1130px;
+  background: linear-gradient(100deg, #7000D3 -32.84%, #280B70 131.02%);
+  overflow: hidden;
+}
+
+.subscribe__bg {
+  z-index: -1;
+}
+
+.subscribe__form {
+  background: #220970;
+}
+
+.footer {
+  background: url("../img/footer/bg.png") 0 0/cover no-repeat;
+}
+
+@media (any-hover: hover) {
+  .footer__list li {
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  .footer__list li:hover {
+    color: #6C00D2;
+  }
+}
+
+.footer__networks li {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #FFF;
+}
+
+@media (any-hover: hover) {
+  .footer__networks li {
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  .footer__networks li:hover {
+    background-color: #6C00D2;
+    border-color: #6C00D2;
+  }
+}
+
+.footer__rights {
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .popup-wrapper__item {

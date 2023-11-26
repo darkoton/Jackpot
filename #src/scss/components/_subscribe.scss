@@ -1,0 +1,19 @@
+.subscribe{
+    margin-bottom: -100px;
+    &__left{
+        max-width: 365px;
+    }
+    &__main{
+        z-index: 1;
+        border-radius: 30px;
+        max-width: 1130px;
+        background: linear-gradient(100deg, #7000D3 -32.84%, #280B70 131.02%);
+        overflow: hidden;
+    }
+    &__bg{
+        z-index: -1;
+    }
+    &__form{
+        background: #220970;
+    }
+}
