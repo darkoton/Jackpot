@@ -6,6 +6,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport"
   content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="apple-touch-icon" sizes="180x180" href="./img/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./img/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./img/icons/favicon-16x16.png">
+<link rel="manifest" href="./manifest.webmanifest">
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -19,7 +23,7 @@
   <div class="header__wrapper">
     <div class="header__container _container">
       <div class="header__body flex justify-between items-center py-10">
-        <div class="header__logo capitalize lg:text-3xl text-2xl">
+        <div class="header__logo bebas capitalize lg:text-3xl text-2xl">
           JACKPOT SYSTEM
         </div>
 
@@ -120,17 +124,19 @@
               <div class="main__timer-top flex-col-reverse sm:flex-row flex items-center mb-3.5 gap-y-4">
                 <div class="main__timer-left flex items-center gap-x-4">
                   <div class="main__timer-minutes flex flex-col">
-                    <div class="main__time text-3xl sm:text-4xl	px-7 py-3" data-timer-minutes="10">10</div>
+                    <div class="main__time text-3xl sm:text-4xl	px-7 py-3 font-semibold" data-timer-minutes="10">10
+                    </div>
 
                   </div>
                   <span class="dots text-3xl sm:text-4xl">:</span>
                   <div class="main__timer-seconds flex flex-col items-center">
-                    <div class="main__time text-3xl sm:text-4xl	px-7 py-3 timer-seconds" data-timer-seconds="0">00</div>
+                    <div class="main__time text-3xl sm:text-4xl	px-7 py-3 timer-seconds font-semibold"
+                      data-timer-seconds="0">00</div>
 
                   </div>
                 </div>
 
-                <h3 class="main__timer-title sm:ml-10 text-3xl sm:text-4xl capitalize">Left Only</h3>
+                <h3 class="main__timer-title sm:ml-10 text-3xl sm:text-4xl capitalize font-medium">Left Only</h3>
 
               </div>
               <div class="main__timer-bottom flex px-6 gap-x-16">
@@ -226,7 +232,7 @@
 
                 <button class="main__form-button _button px-8">BUY COINS NOW</button>
 
-                <div class="main__links text-lg	">
+                <div class="main__links text-lg	flex gap-x-4">
                   <a href="#" class="capitalize">charts </a> | <a href="#" class="capitalize"> Buy Crypto</a>
                 </div>
               </div>
@@ -252,19 +258,19 @@
             </div>
             <div class="winners__item-info flex py-6 max-[600px]:flex-col items-center max-[600px]:text-center">
               <div class="winner__item-user flex flex-col pr-3.5 gap-y-4">
-                <div class="winners__item-name text-xl max-[600px]:text-base font-medium capitalize opacity-90">
+                <div class="winners__item-name text-xl qanelas max-[600px]:text-base font-medium capitalize opacity-90">
                   1F1tAaz5x1HUX</div>
 
-                <div class="winners__item-money red text-2xl max-[600px]:text-xl font-medium capitalize">$3,000.00
+                <div class="winners__item-money red text-2xl max-[600px]:text-xl font-medium capitalize fira">$3,000.00
                 </div>
               </div>
               <div class="winners__item-line mr-8 max-[600px]:mr-0 max-[600px]:my-3"></div>
 
               <div class="winners__item-currency flex flex-col gap-y-5">
-                <div class="winners__item-bnb flex items-center font-medium text-lg gap-x-3.5"><img
+                <div class="winners__item-bnb flex items-center font-medium text-lg gap-x-3.5 qanelas"><img
                     src="./img/winners/bnb.png" alt=""> 4.21
                 </div>
-                <div class="winners__item-gmz flex items-center font-medium text-lg gap-x-3.5"><img
+                <div class="winners__item-gmz flex items-center font-medium text-lg gap-x-3.5 qanelas"><img
                     src="./img/winners/gmz.png" alt="">
                   341.423</div>
 
@@ -283,19 +289,19 @@
             </div>
             <div class="winners__item-info flex py-6 max-[600px]:flex-col items-center max-[600px]:text-center">
               <div class="winner__item-user flex flex-col pr-3.5 gap-y-4">
-                <div class="winners__item-name text-xl max-[600px]:text-base font-medium capitalize opacity-90">
+                <div class="winners__item-name text-xl max-[600px]:text-base font-medium capitalize opacity-90 qanelas">
                   CNLbtMn4xq</div>
 
-                <div class="winners__item-money red text-2xl max-[600px]:text-xl font-medium capitalize">$5999.00
+                <div class="winners__item-money red text-2xl max-[600px]:text-xl font-medium capitalize fira">$5999.00
                 </div>
               </div>
               <div class="winners__item-line mr-8 max-[600px]:mr-0 max-[600px]:my-3"></div>
 
               <div class="winners__item-currency flex flex-col gap-y-5">
-                <div class="winners__item-bnb flex items-center font-medium text-lg gap-x-3.5"><img
+                <div class="winners__item-bnb flex items-center font-medium text-lg gap-x-3.5 qanelas"><img
                     src="./img/winners/bnb.png" alt=""> 44.21
                 </div>
-                <div class="winners__item-gmz flex items-center font-medium text-lg gap-x-3.5"><img
+                <div class="winners__item-gmz flex items-center font-medium text-lg gap-x-3.5 qanelas"><img
                     src="./img/winners/gmz.png" alt="">
                   1341.423</div>
 
@@ -324,7 +330,7 @@
               <img src="./img/how-works/buy.png" alt="">
             </div>
 
-            <p class="how-works__text text-xl text-center">
+            <p class="how-works__text text-xl text-center leading-8	">
               2% of every buy and 5% of every sell is converted into BNB and sent to the Jackpot.
             </p>
           </li>
@@ -334,7 +340,7 @@
               <img src="./img/how-works/anniversary.png" alt="">
             </div>
 
-            <p class="how-works__text text-xl text-center">
+            <p class="how-works__text text-xl text-center leading-8">
               If there are no buys worth at least 0.1 BNB for 10 whole minutes, the last buyer gets 50% of the Jackpot
               transferred directly to his personal wallet. </p>
           </li>
@@ -344,7 +350,7 @@
               <img src="./img/how-works/investor.png" alt="">
             </div>
 
-            <p class="how-works__text text-xl text-center">
+            <p class="how-works__text text-xl text-center leading-8">
               This will create a constant buy pressure, as multiple investors will try to win the Jackpot.</p>
           </li>
           <li
@@ -353,7 +359,7 @@
               <img src="./img/how-works/bank.png" alt="">
             </div>
 
-            <p class="how-works__text text-xl text-center">
+            <p class="how-works__text text-xl text-center leading-8">
               At the same time, if you bought in and didn't win, you can watch your investment steadily rise as more
               buys come to increase the Dollar worth of your investment.
             </p>
@@ -364,7 +370,7 @@
               <img src="./img/how-works/wallet.png" alt="">
             </div>
 
-            <p class="how-works__text text-xl text-center">
+            <p class="how-works__text text-xl text-center leading-8">
               A custom Telegram bot will announce constantly when the 10 minute timer will expire and show the last
               buyer's wallet.
             </p>
@@ -448,7 +454,7 @@
 
         <ul class="rules__cards flex flex-wrap gap-16 justify-center max-[500px]:gap-y-10">
           <li
-            class="rules__card overflow-hidden flex pt-14 pb-12 pl-12 pr-16 gap-x-16 gap-y-6 rounded-xl max-[600px]:w-full max-[550px]:pl-6 max-[550px]:pr-8 max-[500px]:flex-col items-center wow animate__fadeInLeft animate__animated ">
+            class="rules__card overflow-hidden flex pt-14 pb-12 pl-12 pr-20 gap-x-16 gap-y-6 rounded-xl max-[600px]:w-full max-[550px]:pl-6 max-[550px]:pr-8 max-[500px]:flex-col items-center wow animate__fadeInLeft animate__animated ">
             <div class="rules__card-img rules__card-img-1 relative">
               <img src="./img/rules/img1.png" alt="" class=" ">
             </div>
@@ -464,7 +470,7 @@
           </li>
 
           <li
-            class="rules__card overflow-hidden flex pt-14 pb-12 pl-12 pr-16 gap-x-16 gap-y-6 rounded-xl max-[600px]:w-full max-[550px]:pl-6 max-[550px]:pr-8 max-[500px]:flex-col items-center wow animate__fadeInRight animate__animated">
+            class="rules__card overflow-hidden flex pt-14 pb-12 pl-12 pr-20 gap-x-16 gap-y-6 rounded-xl max-[600px]:w-full max-[550px]:pl-6 max-[550px]:pr-8 max-[500px]:flex-col items-center wow animate__fadeInRight animate__animated">
             <div class="rules__card-img rules__card-img-2 relative">
               <img src="./img/rules/img2.png" alt="" class=" ">
             </div>
@@ -472,9 +478,9 @@
               <h3 class="rules__card-title chakra text-3xl mb-7 capitalize">For selling</h3>
               <ol class="rules__card-list flex flex-col gap-y-8 color-purple font-medium">
                 <li class="text-xl list-decimal pl-4 ml-7">2% Liquidity</li>
-                <li class="text-xl list-decimal pl-4 ml-7">2% Marketing</li>
+                <li class="text-xl list-decimal pl-4 ml-7">3% Marketing</li>
                 <li class="text-xl list-decimal pl-4 ml-7">2% Team</li>
-                <li class="text-xl list-decimal pl-4 ml-7">2% Jackpot</li>
+                <li class="text-xl list-decimal pl-4 ml-7">5% Jackpot</li>
               </ol>
             </div>
           </li>
