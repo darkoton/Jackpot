@@ -769,16 +769,17 @@ body._lock-scroll {
     color: #EB4834;
   }
 }
-.main__select svg {
+.main__select-arrow {
   transition: all 0.4s ease 0s;
 }
-.main__select svg.active {
+.main__select-arrow.active {
   transform: rotate(180deg);
 }
 .main__select-list {
   background: #561D93;
   transition: all 0.3s ease 0s;
   max-height: 0%;
+  width: 150px;
 }
 .main__select-list.active {
   max-height: 210px;
@@ -957,7 +958,23 @@ body._lock-scroll {
   left: 0;
   transform: translateY(-50%);
 }
+.bang__img {
+  transition: all 2s ease 0s;
+  transform: translateX(150%);
+}
+.bang__img._active {
+  transform: translateX(0%);
+  animation: astronaut 100s linear 2s infinite normal none;
+}
 
+@keyframes astronaut {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .rules__card {
   border: 1.3px solid #2F1781;
   background: #3D1A8C;

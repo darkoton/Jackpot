@@ -37,6 +37,13 @@ currency.forEach(el => {
 </li>`
 })
 
+window.addEventListener("click", event => {
+  if (!(event.target.classList.contains("main__select")
+    || event.target.offsetParent.classList.contains("main__select"))) {
+    list.classList.remove("active")
+  }
+})
+
 let selectValue = currency[0]
 function select(value) {
   selectValue = currency[currency.findIndex(el => el.title == value)]

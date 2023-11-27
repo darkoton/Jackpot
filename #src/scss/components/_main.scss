@@ -165,10 +165,10 @@
     }
   }
   &__select{
-    svg{
+    &-arrow{
       transition: all 0.4s ease 0s;
     }
-    svg.active{
+    &-arrow.active{
       transform: rotate(180deg);
     }
   }
@@ -176,6 +176,7 @@
     background: #561D93;
     transition: all 0.3s ease 0s;
     max-height: 0%;
+    width: 150px;
     &.active{
       max-height: 210px;
       // padding: 8px 16px;

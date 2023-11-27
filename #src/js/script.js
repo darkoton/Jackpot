@@ -15,6 +15,8 @@
 
 @@include("./chunks/my-calculator.js"); // КАЛЬКУЛЯТОР 
 
+@@include("./chunks/my-animate_scroll.js"); // КАЛЬКУЛЯТОР 
+
 //< " СКРИПТЫ " >=============================================================================================================>//
 
 let isMobile = {
@@ -33,9 +35,9 @@ if (isMobile.any()) {
 }
 
 //< " СКРИПТЫ " >=============================================================================================================>//
-const wow = new WOW({
-  mobile: false,
-  offset: 300,
+new WOW({
+  animateClass: '_animate',
+  offset: 0
 }).init();
 
 const timer = new Timer({
